@@ -11,6 +11,7 @@
     <script type="text/javascript" src="./css/jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="./css/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="./css/love.js" charset="utf-8"></script>
+    <audio src="music/ed.mp3" autoplay="autoplay" type="audio/mp3"></audio>
     <style type="text/css">
         <!--
         .STYLE1 {color: #666666}
@@ -18,7 +19,6 @@
     </style>
 </head>
 <body>
-<audio src="music/ed.mp3" autoplay="autoplay" type="audio/mp3"></audio>
 
 <div id="main">
     <div id="wrap">
@@ -192,7 +192,7 @@
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(500));
             }
         }));
 
